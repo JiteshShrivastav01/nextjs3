@@ -13,9 +13,7 @@ const About = () => {
       <ul>
         {details.map((detail) => (
           <li>
-            <Link href={`/about/${detail.id}`}>
-              {detail.name} is a {detail.role}
-            </Link>
+            <Link href={`/about/${detail.id}`}>{detail.name}</Link>
           </li>
         ))}
       </ul>
